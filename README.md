@@ -2,7 +2,7 @@
 
 Proyecto Integrador: Task List React
 
-![image](https://github.com/ELS4NTA/IETI-TASK-LIST/assets/99996670/92b996ce-0d9d-4bf1-9598-03a3246a688d)
+![image](https://github.com/ELS4NTA/IETI-TASK-LIST/assets/99996670/59ce48dc-2ed3-4a58-8d4b-9ed42aa23cea)
 
 ## React + Vite
 
