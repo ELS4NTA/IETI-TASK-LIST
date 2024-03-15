@@ -1,15 +1,12 @@
 const Task = (props) => {
-    const { name } = props;
-
-    function handleClick() {
-        console.log("Edit button clicked");
-    }
-
+    const { title, description, onDelete, onEdit } = props;
+    
     return (
-        <div onClick={handleClick}>
-            <p>{name}</p>
-            <button>Edit</button>
-            <button>Delete</button>
+        <div>
+            <h2>{title}</h2>
+            <p>{description}</p>
+            <button onClick={onEdit}>Edit</button>
+            <button onClick={onDelete}>Delete</button>
         </div>
     );
 };
