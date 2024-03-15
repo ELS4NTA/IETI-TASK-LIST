@@ -2,6 +2,8 @@
 
 Proyecto Integrador: Task List React
 
+![image](https://github.com/ELS4NTA/IETI-TASK-LIST/assets/99996670/92b996ce-0d9d-4bf1-9598-03a3246a688d)
+
 ## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
