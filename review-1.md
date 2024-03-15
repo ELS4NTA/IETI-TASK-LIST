@@ -13,3 +13,5 @@ Las funcionalidades más importantes de la aplicación son:
 - **Editar Tareas**: Los usuarios pueden modificar el título y la descripción de las tareas existentes. Esto es útil cuando los detalles de una tarea cambian o cuando se comete un error al agregar una tarea.
 
 Una demostración de la aplicación se puede ver a continuación:
+
+![Magic](https://github.com/ELS4NTA/IETI-TASK-LIST/assets/99996670/72bbce56-7b50-45fd-b0b0-9fdcf7538e9f)
