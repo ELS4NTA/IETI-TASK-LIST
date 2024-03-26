@@ -1,35 +1,44 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { Suspense } from "react";
 import Header from "./components/Header";
-import TaskList from "./components/TaskList";
+import Menu from "./components/Menu";
 
 function App() {
-    const tasks = [
-        {
-            title: "Buy a new gaming laptop",
-            description: "A new gaming laptop with a good graphics card",
-            completed: false,
-        },
-        {
-            title: "Complete a previous task",
-            description: "Finish the task from last week",
-            completed: false,
-        },
-        {
-            title: "Create video for youtube",
-            description: "Create a video about the new laptop",
-            completed: true,
-        },
-        {
-            title: "Create a new portfolio site",
-            description: "Create a new portfolio site using React",
-            completed: true,
-        },
-    ];
+    const HomePage = React.lazy(() => import("./pages/HomePage"));
+    const AboutUsPage = React.lazy(() => import("./pages/AboutUsPage"));
+    const TaskListPage = React.lazy(() => import("./pages/TaskListPage"));
 
     return (
-        <>
+        <BrowserRouter>
             <Header title="Todo App" />
-            <TaskList tasks={tasks} />
-        </>
+            <Menu />
+            <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <HomePage />
+                        </Suspense>
+                    }
+                />
+                <Route
+                    path="/about-us"
+                    element={
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <AboutUsPage />
+                        </Suspense>
+                    }
+                />
+                <Route
+                    path="/tasks"
+                    element={
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <TaskListPage />
+                        </Suspense>
+                    }
+                />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
