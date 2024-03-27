@@ -20,7 +20,7 @@ Una demostración de la aplicación se puede ver a continuación:
 
 ## Demostración 📦
 
-https://github.com/ELS4NTA/IETI-TASK-LIST/assets/99996670/98040206-7754-4330-8180-e44916930930
+https://github.com/ELS4NTA/IETI-TASK-LIST/assets/99996670/118dd6ca-38e2-49ee-90f0-28de2debadd0
 
 ## Versionado 📌
 
