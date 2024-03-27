@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Divider } from "@chakra-ui/react";
+import React, { Suspense } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const HomePage = React.lazy(() => import("./pages/HomePage"));
+    const AboutUsPage = React.lazy(() => import("./pages/AboutUsPage"));
+    const TaskListPage = React.lazy(() => import("./pages/TaskListPage"));
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <BrowserRouter>
+            <Header title="Todo App" />
+            <Divider />
+            <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <HomePage />
+                        </Suspense>
+                    }
+                />
+                <Route
+                    path="/about-us"
+                    element={
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <AboutUsPage />
+                        </Suspense>
+                    }
+                />
+                <Route
+                    path="/tasks"
+                    element={
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <TaskListPage />
+                        </Suspense>
+                    }
+                />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
-export default App
+export default App;
