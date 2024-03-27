@@ -1,7 +1,7 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Divider } from "@chakra-ui/react";
 import React, { Suspense } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Menu from "./components/Menu";
 
 function App() {
     const HomePage = React.lazy(() => import("./pages/HomePage"));
@@ -11,7 +11,7 @@ function App() {
     return (
         <BrowserRouter>
             <Header title="Todo App" />
-            <Menu />
+            <Divider />
             <Routes>
                 <Route
                     path="/"

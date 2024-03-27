@@ -18,7 +18,7 @@ Las funcionalidades más importantes de la aplicación son:
 
 Una demostración de la aplicación se puede ver a continuación:
 
-## Demo 🎁
+## Demostración 📦
 
 https://github.com/ELS4NTA/IETI-TASK-LIST/assets/99996670/98040206-7754-4330-8180-e44916930930
 
@@ -29,3 +29,10 @@ https://github.com/ELS4NTA/IETI-TASK-LIST/assets/99996670/98040206-7754-4330-818
 ## Autores ✒️
 
 * **Daniel Santanilla** - [ELS4NTA](https://github.com/ELS4NTA)
+
+
+## Agradecimientos 🎁
+
+[Imagen de upklyak en Freepik](https://www.freepik.es/foto-gratis/ilustracion-3d-mano-poniendo-garrapata-papel_33525355.htm)
+
+[Pencil Icon](https://iconscout.com/icons/pencil) by [Ravindra Kalkani](https://iconscout.com/contributors/ravindra-kalkani) on [IconScout](https://iconscout.com)
